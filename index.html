@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- bootstrap link -->
+
+	<link rel="stylesheet" type="text/css" href="dist/css/bootstrap.min.css">
+	<!-- jQuery link -->
+	<script src="dist/js/jquery.min.js"></script>
+	<!-- jawascript link -->
+	<script src="css/jquery.js"></script>
+	<script>
+	$(document).ready(function(){
+		$('.next').on('click',function(){
+			var currentImg = $('.active');
+			var nextImg = currentImg.next();
+
+			if(nextImg.lenght){
+				currentImg.removeClass();
+				nextImg.addClass('active');
+			};
+		});
+		$('.prev').on('click',function(){
+			var currentImg = $('.active');
+			var prevImg = currentImg.prev();
+
+			if(prevImg.lenght){
+				currentImg.removeClass();
+				prevImg.addClass('active');
+			}
+		});
+	});
+</script>
+	<script src="dist/js/bootstrap.min.js"></script>
+
+<!--  jawa script functionality -->
+
+
+</head>
+
+<body>
+	
+	<!-- navigation start -->
+
+	<div class="navbar  prim-nevbar">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle button" data-toggle="collapse" data-target="#list">
+					<span class="icon-bar">==</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			<a href="#" class="navbar-brand text-capitalize heading">Hasnain-Madicare</a>
+			    			</div>
+			<div class="collapse navbar-collapse navbar-right" id="list">
+				<ul class="nav navbar-nav text-capitalize list">
+					<li><a href="#" class="active">home</a></li>
+					<li><a href="#">about us</a></li>
+					<li><a href="#">docters</a></li>
+					<li><a href="#">contect us</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">user login
+						<span class="caret"></span>	
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="#">docter login</a></li>
+							<li><a href="#">pateint login</a></li>
+							<li><a href="#">admin login</a></li>
+							<li><a href="#">hospital login</a></li>
+						</ul>
+					</li>
+					<li><a href="#" class="dropdown-toggle" data-toggle="dropdown">sign up
+					<span class="caret"></span>	
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">docter</a></li>
+						<li><a href="#">patient</a></li>
+					</ul>
+				</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+<!-- 	navigation end -->
+
+<!--       slider start -->
+ 	<div class="container-float slider">
+ 		<div class="slider-outer">
+ 			<img src="images/slider-pre.png" class="prev">
+ 		    <img src="images/slider-nxt.png" class="next">
+
+ 			<div class="slider-inner">
+ 			<img src="images/slider1.png" class="slider-img active">
+ 			<img src="images/s2.png" class="slider-img">
+ 			<img src="images/slider1.png" class="slider-img">
+ 		   </div>
+ 		</div>
+ 			
+ 	</div>	
+
+ 	<!-- slider and -->
+
+ 	<!-- sectoin start -->
+
+ <div class="grid-12">
+ 	<div class="container">
+ 		<div class="grid-4 box1">
+ 			<h4>patients management</h4>
+ 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+ 			.</p>
+ 			<img src="images/slider1.png" class="sec-img">
+ 		</div>
+
+ 		<div class="grid-4 box1">
+ 			<h4>docters management</h4>
+ 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+ 			.</p>
+ 			<img src="images/slider1.png" class="sec-img">
+ 		</div>
+
+ 		<div class="grid-4 box1">
+ 			<h4>appiontment management</h4>
+ 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+ 			.</p>
+ 			<img src="images/slider1.png" class="sec-img">
+ 		</div>
+ 	</div>
+ </div>
+<!-- article start -->
+
+ <div class="grid-12">
+ 	<div class="container article-pera">
+ 		<h4>about hospital management system</h4>
+ 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ 		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+ 		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+ 		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+ 		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+ 		proident, sunt in culpa qui officia deserunt mollit anim id est laborum consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+ 		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+ 		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+ 	</div>
+ </div>
+
+ <!-- article and -->
+
+
+</body>
+       
